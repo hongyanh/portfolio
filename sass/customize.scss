@@ -47,9 +47,7 @@
   color: #55acee;
 }
 
-/* pin layout */
-
-
+/* card layout */
 #columns {
   column-width: 320px;
   column-gap: 15px;
@@ -65,7 +63,6 @@ div#columns figure {
   display: inline-block;
   column-break-inside: avoid;
   border-radius: 5px;
-  // overflow: hidden;
 }
 
 div#columns figure img {
@@ -104,8 +101,7 @@ div#columns:hover figure:not(:hover) {
   #columns figure { width: 100%; }
 }
 
-/* end if pin layout */
-
+/* end if card layout */
 
 @media(max-width: 660px) {
   .profile-pic {

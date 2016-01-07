@@ -1752,7 +1752,7 @@ nav > ul > li {
   color: #55acee;
 }
 
-/* pin layout */
+/* card layout */
 #columns {
   -webkit-column-width: 320px;
      -moz-column-width: 320px;
@@ -1817,7 +1817,7 @@ div#columns:hover figure:not(:hover) {
     width: 100%;
   }
 }
-/* end if pin layout */
+/* end if card layout */
 @media (max-width: 660px) {
   .profile-pic {
     width: 200px;
