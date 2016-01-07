@@ -1,5 +1,13 @@
 /* General Elements */
-*,*::after,*::before { box-sizing: border-box; }
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 @-ms-viewport { width: device-width; }
 textarea,input,button,select,p,span,a,h1,h2,h3,h4,h5,h6,p { outline: none; }
 html,body {
@@ -97,7 +105,7 @@ a.alert-txt-l:hover, a.alert-txt-d:hover {
   color: $alert-base;
 }
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   vertical-align: middle;
 }
