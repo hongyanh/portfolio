@@ -1,0 +1,25 @@
+.profile-pic {
+  width: 300px;
+}
+.home-intro {
+  font-size: 5rem;
+  font-weight: 400;
+  padding: 1rem
+}
+.v-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-logo {
+  max-width: 50px;
+  margin: 10px;
+}
+.nav-tab a {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  &.active {
+    border-bottom: 2px solid;
+  }
+}
