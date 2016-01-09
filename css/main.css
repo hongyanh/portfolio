@@ -1806,6 +1806,24 @@ div#columns:hover figure:not(:hover) {
   opacity: 0.7;
 }
 
+@media (max-width: 1325px) {
+  .home-intro {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 960px) {
+  .profile-pic {
+    width: 250px;
+  }
+}
+@media (max-width: 857px) {
+  .home-center {
+    position: relative;
+    top: 2rem;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 @media screen and (max-width: 750px) {
   #columns {
     -webkit-column-gap: 0px;
