@@ -119,9 +119,9 @@ div#columns small a {
   transition: .4s color;
 }
 
-div#columns:hover figure:not(:hover) {
-  opacity: 0.7;
-}
+// div#columns:hover figure:not(:hover) {
+//   opacity: 0.8;
+// }
 
 video {
   width: 100%;
@@ -189,5 +189,13 @@ div#columns figure .image-sec
   .social-icons { 
     float: none;
     margin-top: 2rem;
+  }
+}
+
+@media(max-width: 400px) {
+  .nav-logo {
+    max-width: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
   }
 }
