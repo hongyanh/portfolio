@@ -46,11 +46,25 @@
 .fa-twitter {
   color: #55acee;
 }
+.preview {
+  position: relative;
+}
+
+.status {
+  padding: 5px 10px;
+  display: inline-block;
+  background-color: $primary-base;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0px 5px 0px 5px;
+}
 
 /* card layout */
 #columns {
   column-width: 320px;
-  column-gap: 15px;
+  column-gap: 30px;
   width: 90%;
   margin: 40px auto;
 }
@@ -58,7 +72,7 @@
 div#columns figure {
   background: #fefefe;
   box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-  margin: 0 2px 15px;
+  margin: 0 0 30px;
   transition: opacity .4s ease-in-out;
   display: inline-block;
   column-break-inside: avoid;
@@ -77,6 +91,19 @@ div#columns figure figcaption {
   color: #444;
   line-height: 1.5;
   padding: 15px;
+  h2{
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .tag {
+    @extend .pri-bd;
+    color: $primary-base;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
 }
 
 div#columns small { 
@@ -96,22 +123,52 @@ div#columns:hover figure:not(:hover) {
   opacity: 0.7;
 }
 
-@media(max-width: 1325px) {
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0px 0px;
+}
+div#columns figure .image-sec
+ {
+  margin-top: 1rem;
+  border-radius: 0px;
+}
+
+.press {
+  margin-top: 2rem;
+  article {
+    margin-bottom: 4rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width: 1350px) {
   .home-intro {
     font-size: 3rem;
   }
-} 
-
-@media(max-width: 960px) {
   .profile-pic {
     width: 250px;
   }
-} 
+}
 
-@media(max-width: 857px) {
+// @media(max-width: 1024px) {
+//   .home-intro {
+//     font-size: 3rem;
+//   }
+// } 
+
+@media(max-width: 960px) {
+  .profile-pic {
+    width: 200px;
+  }
   .home-center {
     position: relative;
-    top: 2rem;
+    top: 3rem;
     transform: none;
   }
 }
@@ -123,15 +180,7 @@ div#columns:hover figure:not(:hover) {
 
 /* end if card layout */
 
-@media(max-width: 660px) {
-  .profile-pic {
-    width: 200px;
-  }
-  .home-center {
-    position: relative;
-    top: 2rem;
-    transform: none;
-  }
+@media(max-width: 640px) {
   .home-intro {
     font-size: 2.5rem;
     text-align: center;
