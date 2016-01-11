@@ -1876,6 +1876,7 @@ div#columns figure .image-sec {
     top: 3rem;
     -webkit-transform: none;
             transform: none;
+    margin-bottom: 5rem;
   }
 }
 @media screen and (max-width: 750px) {
