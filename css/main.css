@@ -786,7 +786,7 @@ li {
   border: 1px solid gainsboro;
 }
 
-.black-bd, .filter .tag {
+.black-bd {
   border: 1px solid #222;
 }
 
@@ -802,11 +802,11 @@ li {
   border: 1px solid #bbb;
 }
 
-.pri-bd, .filter .tag:hover, .filter .tag.active, .tag {
+.pri-bd, .filter .tag, .filter .tag.active, .tag {
   border: 1px solid #F74F54;
 }
 
-.pri-bd-l, .flash-pri {
+.pri-bd-l, .flash-pri, .filter .tag:hover {
   border: 1px solid #f98083;
 }
 
@@ -1701,7 +1701,7 @@ nav > ul > li {
   font-size: 1.5rem;
 }
 .filter .tag {
-  color: #222;
+  color: #F74F54;
   padding: 5px;
   border-radius: 5px;
   margin-right: 5px;
@@ -1710,7 +1710,7 @@ nav > ul > li {
   cursor: pointer;
 }
 .filter .tag:hover {
-  color: #F74F54;
+  color: #f98083;
 }
 .filter .tag.active {
   background-color: #F74F54;
