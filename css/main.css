@@ -786,7 +786,7 @@ li {
   border: 1px solid gainsboro;
 }
 
-.black-bd {
+.black-bd, .filter .tag {
   border: 1px solid #222;
 }
 
@@ -802,7 +802,7 @@ li {
   border: 1px solid #bbb;
 }
 
-.pri-bd, div#columns figure figcaption .tag {
+.pri-bd, .filter .tag:hover, .filter .tag.active, .tag {
   border: 1px solid #F74F54;
 }
 
@@ -1693,6 +1693,30 @@ nav > ul > li {
   z-index: 5;
 }
 
+.filter {
+  width: 90%;
+  margin: 20px auto;
+}
+.filter h2 {
+  font-size: 1.5rem;
+}
+.filter .tag {
+  color: #222;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.filter .tag:hover {
+  color: #F74F54;
+}
+.filter .tag.active {
+  background-color: #F74F54;
+  color: #f5f5f5;
+}
+
 .profile-pic {
   width: 350px;
   border: 0px solid white;
@@ -1815,7 +1839,8 @@ div#columns figure figcaption h2 {
   font-size: 1rem;
   margin-top: 0;
 }
-div#columns figure figcaption .tag {
+
+.tag {
   color: #F74F54;
   padding: 5px;
   border-radius: 5px;

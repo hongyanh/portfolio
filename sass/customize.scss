@@ -1,3 +1,29 @@
+.filter {
+  width: 90%;
+  margin: 20px auto;
+  h2 {
+    font-size: 1.5rem;
+  }
+  .tag {
+    @extend .black-bd;
+    color: $black-base;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+    &:hover {
+      @extend .pri-bd;
+      color: $primary-base;
+    }
+    &.active {
+      @extend .pri-bd;
+      background-color: $primary-base;
+      color: $white-base;
+    }
+  }
+}
 .profile-pic {
   width: 350px;
   border: 0px solid white;
@@ -101,15 +127,16 @@ div#columns figure figcaption {
     font-size: 1rem;
     margin-top: 0;
   }
-  .tag {
-    @extend .pri-bd;
-    color: $primary-base;
-    padding: 5px;
-    border-radius: 5px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    display: inline-block;
-  }
+}
+
+.tag {
+  @extend .pri-bd;
+  color: $primary-base;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
 div#columns small { 
