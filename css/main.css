@@ -1886,6 +1886,11 @@ div#columns figure .image-sec {
   font-size: 1.5rem;
 }
 
+.download-resume {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
 @media (max-width: 1350px) {
   .home-intro {
     font-size: 3rem;
